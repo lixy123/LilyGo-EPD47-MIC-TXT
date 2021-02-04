@@ -7,7 +7,7 @@ LilyGo-EPD47 麦克风语音记事留言
 <b>二.硬件：</b> <br/>
    1.lilygo-epd47 墨水屏<br/>
        资料位置:  https://github.com/Xinyuan-LilyGO/LilyGo-EPD47<br/>
-   2.MSM261S4030H0,INMP441 I2S麦克风模块均可用,约10-15块钱<br/>
+   2.MSM261S4030H0,INMP441 I2S麦克风模块均可用<br/>
          lilygo-epd47  I2S麦克风<br/>
              VCC3.3    VCC<br/>
              GND       GND<br/>
