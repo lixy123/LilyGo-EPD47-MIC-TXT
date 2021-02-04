@@ -17,6 +17,9 @@ LilyGo-EPD47 麦克风识别并显示文字
              13        CK<br/>
              GND       LR<br/>
 <br/>
+效果图<br/>
+<img src= 'https://raw.githubusercontent.com/lixy123/LilyGo-EPD47-MIC-TXT/main/epd47-1.jpg' /> <br/>
+<img src= 'https://raw.githubusercontent.com/lixy123/LilyGo-EPD47-MIC-TXT/main/epd47-2.jpg' /> <br/>
 <b>三.编译环境:</b><br/>
     1.Arduino 1.8.13<br/>
     2.引用地址配置成: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json<br/>
@@ -28,7 +31,6 @@ LilyGo-EPD47 麦克风识别并显示文字
 <br/>
 <b>四.使用说明：</b><br/>
   1.配置: ESP32首次运行时会自动初始化内置参数,自动进入路由器模式,创建一个ESP32SETUP的路由器，电脑连接此路由输入http:192.168.4.1进行配置<br/>
-    配置:<br/>
     A.esp32连接的路由器和密码<br/>
     B.百度语音的账号校验码<br/>
       baidu_key: 一个账号字串       (必须注册获得)<br/>
