@@ -7,7 +7,7 @@ LilyGo-EPD47 麦克风识别并显示文字
 <br/>
 <b>二.硬件：</b> <br/>
    1.lilygo-epd47 墨水屏<br/>
-       资料位置:  https:github.com/Xinyuan-LilyGO/LilyGo-EPD47<br/>
+       资料位置:  https://github.com/Xinyuan-LilyGO/LilyGo-EPD47<br/>
    2.MSM261S4030H0,INMP441 I2S麦克风模块均可用,约10-15块钱<br/>
          lilygo-epd47  I2S麦克风<br/>
              VCC3.3    VCC<br/>
@@ -19,9 +19,9 @@ LilyGo-EPD47 麦克风识别并显示文字
 <br/>
 <b>三.编译环境:</b><br/>
     1.Arduino 1.8.13<br/>
-    2.引用地址配置成: https:raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json<br/>
+    2.引用地址配置成: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json<br/>
     3.安装： 安装esp32的官方开发包 esp32 by Espressif Systems 版本 1.05-rc6<br/>
-    4.安装此处的开发板，因为字库文件导致编译的固件太大，仅仅为了用到开发板定义。 https:github.com/Xinyuan-LilyGO/TTGO_TWatch_Library<br/>
+    4.安装此处的开发板，因为字库文件导致编译的固件太大，仅仅为了用到开发板定义。 https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library<br/>
     5.开发板选择: TTGO T-WATCH, PSRAM选择Enabled<br/>
     6.选择ESP32连接的端口号，编译，上传烧写固件<br/>
     编译大小约 3.3M<br/>
@@ -33,7 +33,7 @@ LilyGo-EPD47 麦克风识别并显示文字
     B.百度语音的账号校验码<br/>
       baidu_key: 一个账号字串       (必须注册获得)<br/>
       baidu_secert: 一个账号校验码  (必须注册获得)<br/>
-      这两个参数需要注册百度语音服务,在如下网址获取 https:ai.baidu.com/tech/speech     <br/>
+      这两个参数需要注册百度语音服务,在如下网址获取 https://ai.baidu.com/tech/speech     <br/>
       开通中文普通话短语音识别，单次语音最长识别60秒。新用户可免费用一段时间，再用必须开通收费，1000次3.4元左右价位，如果不限制使用，最多每天可调用5000-10000次，需要增加休眠功能或控制调用条件。<br/>
     C.其它音量监测参数: 默认是在家里安静环境下,如果周围较吵,需要将值调高<br/>
       define_max1 每0.5秒声音峰值（声音开始判断）<br/>
