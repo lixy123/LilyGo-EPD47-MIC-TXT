@@ -1,5 +1,4 @@
-# LilyGo-EPD47-MIC-TXT
-LilyGo-EPD47 麦克风识别并显示文字
+LilyGo-EPD47 麦克风语音记事留言
 
 <b>一.程序功能：</b> <br/>
      识别声音中的文字，文字显示至墨水屏<br/>
