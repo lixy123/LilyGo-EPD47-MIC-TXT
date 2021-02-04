@@ -4,6 +4,7 @@ LilyGo-EPD47 麦克风识别并显示文字
 <b>一.程序功能：</b> <br/>
      识别声音中的文字，文字显示至墨水屏<br/>
      每段录音最长10秒(可调长),平均一段录音的文字识别时间约2-5秒，取决于网络速度<br/>
+<br/>
 <b>二.硬件：</b> <br/>
    1.lilygo-epd47 墨水屏<br/>
        资料位置:  https:github.com/Xinyuan-LilyGO/LilyGo-EPD47<br/>
