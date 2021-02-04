@@ -20,6 +20,7 @@ LilyGo-EPD47 麦克风识别并显示文字
 效果图<br/>
 <img src= 'https://raw.githubusercontent.com/lixy123/LilyGo-EPD47-MIC-TXT/main/epd47-1.jpg' /> <br/>
 <img src= 'https://raw.githubusercontent.com/lixy123/LilyGo-EPD47-MIC-TXT/main/epd47-2.jpg' /> <br/>
+<br/>
 <b>三.编译环境:</b><br/>
     1.Arduino 1.8.13<br/>
     2.引用地址配置成: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json<br/>
