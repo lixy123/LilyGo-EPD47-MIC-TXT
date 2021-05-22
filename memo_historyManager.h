@@ -6,6 +6,7 @@
 //bug 不能用！
 //#include <Vector.h>
 
+
 #include <ArduinoJson.h>
 
 //https://github.com/ivanseidel/LinkedList
@@ -38,4 +39,5 @@ class memo_historyManager {
     void multi_append_txt_list(String txt);
     void save_list();
     int load_list();
+    void clear_list();
 };

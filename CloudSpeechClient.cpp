@@ -45,6 +45,24 @@ void CloudSpeechClient::push_bodybuff_buff(byte * src_buff, uint32_t len)
     sound_bodybuff_p = 0;
 }
 
+
+/* 实际数据样例:
+  HTTP/1.1 200 OK
+  Cache-Control: no-store
+  Connection: keep-alive
+  Content-Type: application/json
+  Date: Sun, 27 Dec 2020 08:51:59 GMT
+  P3p: CP=" OTI DSP COR IVA OUR IND COM "
+  Server: Apache
+  Set-Cookie: BAIDUID=4737CC0E258D382D51931A9636638DAB:FG=1; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2145916555; path=/; domain=.baidu.com; version=1
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  410
+
+  {"refresh_token":"25.afd719da2abd0ae00e1ae0fce4d09de3.315360000.1924419119.282335-9406754","expires_in":2592000,"session_key":"9mzdA5rldD4BKpl4vPpFST1FXFC\/tHx+lrRZbdoaHcNscXgMuxH4EoHrBCZw5fxRkJQlF707nFadmxjdZrDkRV3Eo7D7","access_token":"24.801e840d2e248f7bdd5b6a385949db4a.2592000.1611651119.282335-9406754","scope":"brain_asr_async brain_speech_realtime brain_enhanced_asr public brain_all_scope audio_voice_assistant_get wise_adapt lebo_resource_base lightservice_public hetu_basic lightcms_map_poi kaidian_kaidian ApsMisTest_Test\u6743\u9650 vis-classify_flower lpq_\u5f00\u653e cop_helloScope ApsMis_fangdi_permission smartapp_snsapi_base smartapp_mapp_dev_manage iop_autocar oauth_tp_app smartapp_smart_game_openapi oauth_sessionkey smartapp_swanid_verify smartapp_opensource_openapi smartapp_opensource_recapi fake_face_detect_\u5f00\u653eScope vis-ocr_\u865a\u62df\u4eba\u7269\u52a9\u7406 idl-video_\u865a\u62df\u4eba\u7269\u52a9\u7406 smartapp_component smartapp_search_plugin","session_secret":"eb59ebdaea7973dbe23d7e7a39db7d14"}
+  end getToken...
+*/
+
 //应改成json分析
 String CloudSpeechClient::Findkey(String line)
 {
@@ -358,8 +376,14 @@ String CloudSpeechClient::Find_baidutext(String line)
 #endif
   if (line.indexOf("err_msg") > 0)
   {
+    /*
     StaticJsonBuffer<512> jsonBuffer;
     JsonObject& root = jsonBuffer.parseObject(line);
+    */
+    
+    StaticJsonDocument<1024> root;
+    DeserializationError error = deserializeJson(root, line);
+    
     p_err_msg =  root["err_msg"];
     err_msg = String(p_err_msg);
     if (err_msg.startsWith("success."))
